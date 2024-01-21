@@ -1,18 +1,9 @@
-# Salesforce DX Project: Next Steps
+### Example of the Builder Design Pattern (Stepwise)
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This example of the stepwise builder design pattern was develop using Salesforce Apex language, but I've originally learned about this pattern in C#, so a few things change, mainly the methods ans syntax available to us.
 
-## How Do You Plan to Deploy Your Changes?
+Using a builder, we can create and API that assumes the responsibility for appending these strings, elements or whatever, and when assembling the elements we don't have to think about it anymore. Its really a build once and use forever approach.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+One other technique used in this project was the Fluent Builder. This technique is all about flow of code. The idea is that the methods always return the object’s instance, this way we can chain method calls together and streamline the code, making it more readable.
 
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+If your interested about what course i took, you can access it via this [link](https://www.udemy.com/course/design-patterns-csharp-dotnet).
